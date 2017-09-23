@@ -1,0 +1,72 @@
+<!--
+  Generated template for the AddcharityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add A Charity</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Name</ion-label>
+      <ion-input type="text" id="name" (input)="test($event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Information</ion-label>
+      <ion-input type="text" [value]="information"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label fixed>Imgae URL</ion-label>
+      <ion-input type="text" [value]="imageUrl"></ion-input>
+    </ion-item>
+  </ion-list>
+  <hr>
+  <!--<ion-list>
+    <ion-item>
+      <ion-label fixed>Who are we?</ion-label>
+      <ion-input type="text" [value]="whoAreWe"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed [value]="whatWeDo">What we do?</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label fixed [value]="donationSite">Donation site</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <hr>
+  <ion-list>
+      <ion-item>
+        <ion-label fixed>Email</ion-label>
+        <ion-input type="text" [value]="email"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label fixed>Telephone</ion-label>
+        <ion-input type="text" [value]="telephone"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label fixed>Address</ion-label>
+        <ion-input type="text" [value]="address"></ion-input>
+      </ion-item>
+    </ion-list> -->
+    <button (click)="test()">Test </button>
+</ion-content>

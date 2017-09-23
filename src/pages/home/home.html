@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Charity App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let charity of charities">
+    <img src="{{ charity.imageUrl }}" />
+    <ion-card-content>
+      <ion-card-title>
+        {{ charity.name }}
+      </ion-card-title>
+      <p>
+        {{ charity.information }}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
